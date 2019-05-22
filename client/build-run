@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+echo "Clean up"
+rm -rf ./dist
+
+echo "Build"
+node ./node_modules/webpack-cli/bin/cli.js
+
+echo "Run"
+node ./dist/bundle.js
